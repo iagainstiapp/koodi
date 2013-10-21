@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>I against I</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <p>Lorem ipsum</p>
-  </body>
+    <head>
+        <title>I against I</title>
+        <meta charset="utf-8" />
+		<!-- Alla suositeltu meta-tägi viewportille PhoneGapilla tehtäessä -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+    </head>
+    <body id="body">
+		<div id="wrapper">
+			<div id="container">
+				<h1>I Against I</h1>
+				<form id="todo-form">
+					<input id="todo" type="text" placeholder="Enter a task" />
+					<input id="submit" type="submit" value="">
+				</form>
+				<div class="clearfix"></div>
+				<!--<a href="#" id="clear-all">Clear All</a> poistaa kaikki-->
+				<div id="text">
+					<p>Time to get things done</p>
+					<p>Enter your first task to get started</p>
+				</div>
+				<div id="do-when">
+					<p>Do when?</p>
+				</div>
+				<div id="do-time">
+					<div id="div1"> 
+						<p>NOW!</p>
+					</div>
+					<div id="div2" class="display"> 
+						<p>Within 1 week</p>
+					</div>
+					<div id="div3" class="display"> 
+						<p>Before ...</p>
+					</div>
+				</div>
+				<ul id="show-items"></ul>
+				<button class="myButton">Do it now!</button>
+			</div>
+		</div>
+		<!-- Allaolevat tiedostot voi ottaa pois, mutta jätin ne tähän vielä varmuudenvuoksi -->
+		<!--<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>-->
+		<!--<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>-->
+		<script src="js/jquery-1.4.4.min.js"></script>
+        <script src="js/jquery-ui-1.8.7.custom.min.js"></script>
+        <script src="js/jquery.inlineedit.js"></script>
+        <script src="js/pubsub.js"></script>
+        <script src="js/base.js"></script>
+		<script src="js/jquery.ui.touch-punch.min.js"></script>
+    </body>
 </html>
