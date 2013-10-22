@@ -1,4 +1,4 @@
-/* Tallennus localstorageen - sisältää kaikki*/
+/* Tallennus localstorageen - sisï¿½ltï¿½ï¿½ kaikki*/
 $(function() {
     var i = Number(localStorage.getItem('todo-counter')) + 1,
         j = 0,
@@ -22,23 +22,23 @@ $(function() {
             "<li id='" + orderList[j] + "'>"
             + "<span class='editable'>"
             + localStorage.getItem(orderList[j])
-            + "</span> <a href='#'>X</a></li>" //Poistomahdollisuuden voi ottaa myöhemmin pois
+            + "</span> <a href='#'>X</a></li>" //Poistomahdollisuuden voi ottaa myï¿½hemmin pois
         );
     }
          
-    // Lisää todo:n
+    // Lisï¿½ï¿½ todo:n
     $form.submit(function(e) {
         e.preventDefault();
         $.publish('/add/', []);
-		$('ul li').css('background-color', '#8ae1e6'); //vaihtaa todo-työn värin siniseksi
+		$('ul li').css('background-color', '#8ae1e6'); //vaihtaa todo-tyï¿½n vï¿½rin siniseksi
     });
 	
-	// Vaihtaa taustaväriä ym.
+	// Vaihtaa taustavï¿½riï¿½ ym.
 	
 	$(function(){
 
-	$('body').css('background-color',localStorage.bgcolor);
-	$('body').css('background-image',localStorage.bgimage);
+	$('#body').css('background-color',localStorage.bgcolor);
+	$('#body').css('background-image',localStorage.bgimage);
 	$('#todo').css('background-color',localStorage.bgcolorTodo);
 	$('#todo').css('border',localStorage.border);
 	$('#submit').css('background-image',localStorage.bgsubmit);
@@ -50,10 +50,10 @@ $(function() {
 
    $('#todo').focus(function(){
      localStorage.bgcolor = "#14c3cc";
-     $('body').css('background-color',localStorage.bgcolor);
+     $('#body').css('background-color',localStorage.bgcolor);
 	 
 	 localStorage.bgimage = "none";
-     $('body').css('background-image',localStorage.bgimage);
+     $('#body').css('background-image',localStorage.bgimage);
 	 
 	 localStorage.bgcolorTodo = "#8ae1e6";
      $('#todo').css('background-color',localStorage.bgcolorTodo);
@@ -92,17 +92,17 @@ $(function() {
 	});*//*.blur(function() {
 			$('#text').css('display', 'inline');
 		});*/
-		//Ylläolevalla piilotetulla koodilla voidaan tulla näkyviin takaisin piilotetut divit
+		//Yllï¿½olevalla piilotetulla koodilla voidaan tulla nï¿½kyviin takaisin piilotetut divit
 
 
-    // Poistaa yksittäisen todo:n, jätin tämän toistaiseksi tähän
+    // Poistaa yksittï¿½isen todo:n, jï¿½tin tï¿½mï¿½n toistaiseksi tï¿½hï¿½n
     $itemList.delegate('a', 'click', function(e) {
         var $this = $(this);
         e.preventDefault();
         $.publish('/remove/', [$this]);
     });
      
-    // Lajittelee (sort) yksittäisiä todo-tehtäviä
+    // Lajittelee (sort) yksittï¿½isiï¿½ todo-tehtï¿½viï¿½
 	
 	/*$itemList.sortable({
        items: "li:not(.ui-li-divider)"
@@ -132,13 +132,13 @@ $(function() {
             }
     });
  
-    // Tyhjentää kaikki, otin tämän pois kommentilla myös html:stä
+    // Tyhjentï¿½ï¿½ kaikki, otin tï¿½mï¿½n pois kommentilla myï¿½s html:stï¿½
     /*$clearAll.click(function(e) {
         e.preventDefault();
         $.publish('/clear-all/', []);
     });*/
  
-    // Fade In and Fade Out efektiä poistolinkkin hoveriin
+    // Fade In and Fade Out efektiï¿½ poistolinkkin hoveriin
     $itemList.delegate('li', 'mouseover mouseout', function(event) {
         var $this = $(this).find('a');
         if(event.type === 'mouseover') {
@@ -151,15 +151,15 @@ $(function() {
     // Subscribes
     $.subscribe('/add/', function() {
         if ($newTodo.val() !== "") {
-            // Ottaa input-kentän arvon ja tallentaa sen localstorageen
+            // Ottaa input-kentï¿½n arvon ja tallentaa sen localstorageen
             localStorage.setItem(
                 "todo-" + i, $newTodo.val()
             );
              
-            // Asettaa todo:n maksimi laskurin niin, että lista ei resetoidu, kun sivu päivitetään
+            // Asettaa todo:n maksimi laskurin niin, ettï¿½ lista ei resetoidu, kun sivu pï¿½ivitetï¿½ï¿½n
             localStorage.setItem('todo-counter', i);
              
-            // Liittää uuden todo-työn arvon (value)
+            // Liittï¿½ï¿½ uuden todo-tyï¿½n arvon (value)
             $itemList.append(
                 "<li id='todo-" + i + "'>"
                 + "<span class='editable'>"
@@ -174,7 +174,7 @@ $(function() {
                 .css('display', 'none')
                 .fadeIn();
              
-            // Tyhjentää input-kentän
+            // Tyhjentï¿½ï¿½ input-kentï¿½n
             $newTodo.val("");
              
             i++;
@@ -184,12 +184,12 @@ $(function() {
     $.subscribe('/remove/', function($this) {
         var parentId = $this.parent().attr('id');
          
-        // Poistaa todo-työn localstoragesta klikatun parent elementin id:n perusteella
+        // Poistaa todo-tyï¿½n localstoragesta klikatun parent elementin id:n perusteella
         localStorage.removeItem(
             "'" + parentId + "'"
         );
          
-        // Fade out-efekti, kun todo-työ poistetaan DOMista
+        // Fade out-efekti, kun todo-tyï¿½ poistetaan DOMista
         $this.parent().fadeOut(function() {
             $this.parent().remove();
              
@@ -199,10 +199,10 @@ $(function() {
      
     $.subscribe('/regenerate-list/', function() {
         var $todoItemLi = $('#show-items li');
-        // Tyhjentää järjestys arrayn
+        // Tyhjentï¿½ï¿½ jï¿½rjestys arrayn
         order.length = 0;
          
-        // Käy läpi todo-työt listalta, nappaa ID:n ja työntää (push) sen arrayhin
+        // Kï¿½y lï¿½pi todo-tyï¿½t listalta, nappaa ID:n ja tyï¿½ntï¿½ï¿½ (push) sen arrayhin
         $todoItemLi.each(function() {
             var id = $(this).attr('id');
             order.push(id);
@@ -237,4 +237,10 @@ $(function() {
 		return false; 
 	  });
 	});
+
+	//Kun klikkaa DONE-nappulaa finishing_task.html, niin kaikki poistuu localstoragesta
+	$('#done').click(function(){
+		localStorage.clear();
+   	});
+   	
 });
