@@ -11,7 +11,6 @@ body {
 a,
 a:link {
     outline: none;
-	font-style:italic;
 }
 
 ::-webkit-input-placeholder {
@@ -200,6 +199,31 @@ a:link {
         position:relative;
         top:1px;
     }
+    
+    
+    
+    /* finishing_task.html*/
+
+#done-page{
+	background-image:url('../images/bg.jpg');
+}
+
+.endtask{
+	text-transform:upppercase;
+}
+
+#text_middle{
+	font-size:36px;
+}
+
+#done{
+	text-transform:uppercase;
+	background-color:#83e8b3;
+	padding:15px 20px 15px 20px;
+	color:#fff;
+	font-size:28px;
+	text-decoration:none;
+}
 
 
 /*Media Queries*/
