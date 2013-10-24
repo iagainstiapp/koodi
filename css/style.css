@@ -82,32 +82,68 @@ a:link {
                         clear:both;
                 }
 
-                ul {
+                .sininen {
                         margin: 15px auto 0;
-                        padding: 0;
+                        padding: 15px 0 15px 0;
                         width: 100%;
+						color:#000;
+						/*background-color:#8ae1e6;*/
                         -ms-touch-action: none;
                 }
-                        ul li {
+                        .sininen li {
                                 list-style-type: none;
                                 font-size: 24px;
                                 cursor: move;
-                                background-color: #a2edc6;
-                                margin-bottom: 5px;
+                                background-color: #dcfafa;
+								/*margin:15px;*/
+								margin:15px 0 15px 0;
                                 padding: 10px;
                                 text-align: left;
                         }
-                                ul li span {
+                                .sininen li span {
                                         cursor: text;
                                 }
-                                ul li a,
-                                ul li a:link {
+                                .sininen li a,
+                                .sininen li a:link {
                                         float: right;
                                         display: none;
                                         text-decoration: none;
                                         color: #f03;
                                 }
-                                ul li a:hover {
+                                .sininen li a:hover {
+                                        text-decoration: underline;
+                                }
+								
+								
+								/*Punainen*/
+								
+                .punainen {
+                        padding: 15px 0 15px 0;
+                        width: 100%;
+						color:#000;
+						background-color:#CA958F;;
+                        -ms-touch-action: none;
+                }
+                        .punainen li {
+                                list-style-type: none;
+                                font-size: 24px;
+                                cursor: move;
+                                background-color: #eddbd9;
+                                margin:15px;
+                                padding: 10px;
+                                text-align: left;
+                        }
+                                .punainen li span {
+                                        cursor: text;
+                                }
+                                .punainen li a,
+                                .punainen li a:link {
+                                        float: right;
+                                        display: none;
+                                        text-decoration: none;
+                                        color: #f03;
+                                }
+                                .punainen li a:hover {
                                         text-decoration: underline;
                                 }
 
@@ -181,6 +217,7 @@ a:link {
         text-decoration:none;
         
         text-shadow:0px 0px 0px #810e05;
+		cursor:pointer;
         
     }
     .myButton:hover {
@@ -225,18 +262,6 @@ a:link {
         text-decoration:none;
 }
 
-
-/*Media Queries*/
-@media only screen and (max-width: 480px) {
-        h1{font-size:36px;}
-        #text p:first-child{font-size:24px;}
-        #text p:nth-child(2){font-size:18px;}
-        #container {padding:15px;}
-        #do-when{font-size:24px;}
-        #do-time{font-size:24px;}
-}
-
-
    /* progress-page*/
 
 #red{
@@ -250,6 +275,8 @@ a:link {
         font-size:28px;
         text-decoration:none;
         text-align:left;
+		float:left;
+		margin-left:18px;
 }
 
                 h2 {
@@ -286,3 +313,15 @@ a:link {
                                 background: url('../images/button-red.png') no-repeat;
                                 position:absolute;
                                 right:0;
+						}
+
+/*Media Queries*/
+@media only screen and (max-width: 480px) {
+        h1{font-size:36px;}
+        #text p:first-child{font-size:24px;}
+        #text p:nth-child(2){font-size:18px;}
+        #container {padding:15px;}
+        #do-when{font-size:24px;}
+        #do-time{font-size:24px;}
+		#imdone{margin-left:10px; padding:15px 20px 15px 5px;}
+}
