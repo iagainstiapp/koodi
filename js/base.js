@@ -19,7 +19,9 @@ $(function() {
      
     for( j = 0, k = orderList.length; j < k; j++) {
         $itemList.append(
+			
             "<li id='" + orderList[j] + "'>"
+			+ "<input type='checkbox'>"
             + "<span class='editable'>"
             + localStorage.getItem(orderList[j])
             + "</span> <a href='#'>X</a></li>" //Poistomahdollisuuden voi ottaa myöhemmin pois
