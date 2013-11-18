@@ -6,7 +6,7 @@
         id = "com.phonegap.hello-world"
         version = "1.0.0">
 
-    <name>Hello World</name>
+    <name>I Against I</name>
 
     <description>
         Hello World sample application that responds to the deviceready event.
@@ -54,10 +54,10 @@ A list of available plugins are available at https://build.phonegap.com/docs/plu
 
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
-    <icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:density="ldpi" />
-    <icon src="res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:density="mdpi" />
-    <icon src="res/icon/android/icon-72-hdpi.png" gap:platform="android" gap:density="hdpi" />
-    <icon src="res/icon/android/icon-96-xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+    <icon src="images/icons/android/Icon36.png" gap:platform="android" gap:density="ldpi" />
+    <icon src="images/icons/android/Icon48.png" gap:platform="android" gap:density="mdpi" />
+    <icon src="images/icons/android/Icon72.png" gap:platform="android" gap:density="hdpi" />
+    <icon src="images/icons/android/Icon96.png" gap:platform="android" gap:density="xhdpi" />
     <icon src="res/icon/blackberry/icon-80.png" gap:platform="blackberry" />
     <icon src="res/icon/blackberry/icon-80.png" gap:platform="blackberry" gap:state="hover"/>
     <icon src="res/icon/ios/icon-57.png" gap:platform="ios" width="57" height="57" />
