@@ -242,4 +242,8 @@ $(function() {
 	$('#done').click(function(){
 		localStorage.clear();
    });
+   
+   	// Listan laskemiseen
+	var countList = $("#show-items").children("li").length;
+	alert(countList);
 });
