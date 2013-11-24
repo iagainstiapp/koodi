@@ -256,7 +256,7 @@ var itemList = $("#show-items"),
 if ( countList = (itemList) ) {
   // echo "<p>Whoohoo! You are such a king!</p>";
 }
-else ( countList > (itemList * 0.30) ) {
+else if ( countList > (itemList * 0.30) ) {
   // echo "<p>At least you got something done!</p>";
 }
 else ( countList > (itemList * 0) ) {
