@@ -251,13 +251,16 @@ $(function() {
 	
 });
 
-
+//laskee valittujen checkboxien määrän. Vielä kun saisi laskemaan
+//aina kun uusi boxi valitaan
 
 $('#laskuri').click(function(){
 	                                    
 	alert($('input[type="checkbox"]:checked').length);
 
 	});
+
+
 
 
 
