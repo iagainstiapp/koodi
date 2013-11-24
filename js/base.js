@@ -247,7 +247,19 @@ $(function() {
    	// Listan laskemiseen
 	var countList = $("#show-items").children("li").length;
 	alert(countList);
+	
+	
 });
+
+
+
+$('#laskuri').click(function(){
+	                                    
+	alert($('input[type="checkbox"]:checked').length);
+
+	});
+
+
 
 
 // Total laskenta
