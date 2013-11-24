@@ -247,3 +247,18 @@ $(function() {
 	var countList = $("#show-items").children("li").length;
 	alert(countList);
 });
+
+
+// Total laskenta
+var itemList = $("#show-items"),
+    countList  = $("#show-items").children("li").length; 
+
+if ( countList = (itemList) ) {
+  // echo "<p>Whoohoo! You are such a king!</p>";
+}
+else if ( countList > (itemList * 0.30) ) {
+  // echo "<p>At least you got something done!</p>";
+}
+else ( countList > (itemList * 0) ) {
+  // echo "<p> We are going into the black now!</p>";
+}
