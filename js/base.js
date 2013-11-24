@@ -20,6 +20,7 @@ $(function() {
     for( j = 0, k = orderList.length; j < k; j++) {
         $itemList.append(
             "<li id='" + orderList[j] + "'>"
+			+ "<input type='checkbox'>"
             + "<span class='editable'>"
             + localStorage.getItem(orderList[j])
             + "</span> <a href='#'>X</a></li>" //Poistomahdollisuuden voi ottaa myöhemmin pois
@@ -250,15 +251,15 @@ $(function() {
 
 
 // Total laskenta
-var itemList = $("#show-items"),
-    countList  = $("#show-items").children("li").length; 
+//var itemList = $("#show-items"),
+//    countList  = $("#show-items").children("li").length; 
 
-if ( countList = (itemList) ) {
+//if ( countList = (itemList) ) {
   // echo "<p>Whoohoo! You are such a king!</p>";
-}
-else if ( countList > (itemList * 0.30) ) {
+//}
+//else if ( countList > (itemList * 0.30) ) {
   // echo "<p>At least you got something done!</p>";
-}
-else ( countList > (itemList * 0) ) {
+//}
+//else ( countList > (itemList * 0) ) {
   // echo "<p> We are going into the black now!</p>";
-}
+//}
