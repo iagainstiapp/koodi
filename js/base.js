@@ -245,16 +245,14 @@ $(function() {
    });
    
    	// Listan laskemiseen
-	var countList = $("#show-items").children("li").length;
-	alert(countList);
+	//var countList = $("#show-items").children("li").length;
+	//alert(countList);
 	
 	
-});
-
-//laskee valittujen checkboxien määrän. Vielä kun saisi laskemaan
+	//laskee valittujen checkboxien määrän. Vielä kun saisi laskemaan
 //aina kun uusi boxi valitaan
-var laskuri = $('input[type="checkbox"]:checked').length;
-	alert(laskuri);
+//var laskuri = $('input[type="checkbox"]:checked').length;
+	//alert(laskuri);
 
 //$('#laskuri').click(function(){
 	                                    
@@ -264,19 +262,25 @@ var laskuri = $('input[type="checkbox"]:checked').length;
 
 
 
+$("#imdone").click(function(){
+	// Total laskenta
+	//var itemList = $("#show-items");
+	var laskuri = $('input[type="checkbox"]:checked').length;
+	var countList = $("#show-items").children("li").length;
+	
+	if ( countList == laskuri ) {
+		alert ("<p>Whoohoo! You are such a king!</p>");
+	}
+	else if ( laskuri / countList >= 0.66 ) {
+		alert ("<p>Try better!</p>");
+	}
+	else if ( laskuri / countList >= 0.33 ) {
+		alert ("<p>ihan ok!</p>");
+	}
+	else {
+		alert ("<p> We are going into the black now!</p>");
+	}
+});
 
-
-
-// Total laskenta
-//var itemList = $("#show-items"),
-//    countList  = $("#show-items").children("li").length; 
-
-//if ( countList = (itemList) ) {
-  // echo "<p>Whoohoo! You are such a king!</p>";
-//}
-//else if ( countList > (itemList * 0.30) ) {
-  // echo "<p>At least you got something done!</p>";
-//}
-//else ( countList > (itemList * 0) ) {
-  // echo "<p> We are going into the black now!</p>";
-//}
+	
+});
