@@ -259,9 +259,17 @@ $(function() {
 	//alert($('input[type="checkbox"]:checked').length);
 
 	//});
+	
+// tarkistaa onko rivejä listassa ennen kuin siirtyy seuraavalle sivulle
+$("#letsDo").click(function(){
+		var countList = $("#show-items").children("li").length;
+		if (countList > 0) {
+			window.location.href="inprogress.html"
+		}
+	});
 
 
-
+// vertailee tehtyjä tehtäviä totaliin ja antaa palautesivun
 $("#imdone").click(function(){
 	// Total laskenta
 	//var itemList = $("#show-items");
