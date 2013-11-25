@@ -261,6 +261,11 @@ $(function() {
 	//});
 	
 // tarkistaa onko rivejä listassa ennen kuin siirtyy seuraavalle sivulle
+$("#goBack").click(function()
+  {
+  window.history.back()
+  });
+  
 $("#letsDo").click(function(){
 		var countList = $("#show-items").children("li").length;
 		if (countList > 0) {
