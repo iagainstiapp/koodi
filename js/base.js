@@ -249,21 +249,28 @@ $(function() {
 	alert(countList);
 	
 	
-});
-
 //laskee valittujen checkboxien määrän. Vielä kun saisi laskemaan
 //aina kun uusi boxi valitaan
 
-$('#laskuri').click(function(){
+//$('#laskuri').click(function(){
 	                                    
-	alert($('input[type="checkbox"]:checked').length);
+//	alert($('input[type="checkbox"]:checked').length);
+var cbLaskuri = $('input[type="checkbox"]:checked').length;
+	//});
+	
+	function addNewValue() {
 
-	});
+var bar = document.getElementById("progressBar");
+bar.value += cbLaskuri / countList * 100;
+};
+	
+});
 
+function addNewValue() {
 
-
-
-
+var bar = document.getElementById("progressBar");
+bar.value += 10;
+};
 
 // Total laskenta
 //var itemList = $("#show-items"),
