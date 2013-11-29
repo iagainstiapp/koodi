@@ -20,10 +20,10 @@ $(function() {
     for( j = 0, k = orderList.length; j < k; j++) {
         $itemList.append(
             "<li id='" + orderList[j] + "'>"
-			+ "<input type='checkbox'>"
+			+ "<input type='checkbox' class='checkbox'>"
             + "<span class='editable'>"
             + localStorage.getItem(orderList[j])
-            + "</span> <a href='#'>X</a></li>" //Poistomahdollisuuden voi ottaa myöhemmin pois
+            + "</span> <a class='poisto' href='#'>X</a></li>" //Poistomahdollisuuden voi ottaa myöhemmin pois
         );
     }
          
@@ -101,6 +101,10 @@ $(function() {
         var $this = $(this);
         e.preventDefault();
         $.publish('/remove/', [$this]);
+		var laskuri = $('input[type="checkbox"]:checked').length;
+		var countList = $("#show-items").children("li").length - 1;
+		var val = laskuri / countList;
+		document.getElementById("progressbar").value = val;
     });
      
     // Lajittelee (sort) yksittäisiä todo-tehtäviä
@@ -272,6 +276,21 @@ $("#letsDo").click(function(){
 			window.location.href="inprogress.html"
 		}
 	});
+	
+	$(".checkbox").click(function(){
+	var laskuri = $('input[type="checkbox"]:checked').length;
+	var countList = $("#show-items").children("li").length;
+	var val = laskuri / countList;
+	document.getElementById("progressbar").value = val;
+	});
+	
+	//$(".poisto").ready(function(){
+	function updateValue(){
+	var laskuri = $('input[type="checkbox"]:checked').length;
+	var countList = $("#show-items").children("li").length;
+	var val = laskuri / countList;
+	document.getElementById("progressbar").value = val;
+	};
 
 
 // vertailee tehtyjä tehtäviä totaliin ja antaa palautesivun
