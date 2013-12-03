@@ -47,6 +47,7 @@ $(function() {
 	$('#text').css('display',localStorage.hideText);
 	$('#do-when').css('display',localStorage.showDo);
 	$('#do-time').css('display',localStorage.showTime);
+	$('#doItNow').css('display',localStorage.showDo);
 	
 
    $('#todo').focus(function(){
@@ -78,7 +79,10 @@ $(function() {
      $('#do-time').css('display',localStorage.showTime);
 	 
    });
-   
+   $('#submit').click(function() {
+	localStorage.showDoit = "block";
+   $('#doItNow').css('display',localStorage.showDo);
+   });
 });
 	
 	/*$('#todo').focus(function () {
@@ -245,6 +249,12 @@ $(function() {
 	
 	//Kun klikkaa DONE-nappulaa finishing_task.html, niin kaikki poistuu localstoragesta
 	$('#done').click(function(){
+		localStorage.clear();
+   });
+   $('#done_orange').click(function(){
+		localStorage.clear();
+   });
+   $('#giveup_black').click(function(){
 		localStorage.clear();
    });
    
