@@ -39,12 +39,14 @@ a:link {
 }
 
 #wrapper{
+		min-height: 100%;
+		height: auto !important;
+		height: 100%;
         font-family: "fira_sans_otregular", "Trebuchet MS", sans-serif;
 		position: relative;
         max-width: 700px;
-        min-height: 700px;
         text-align: center;
-        margin: auto;
+        margin: 0 auto -97px;
         padding:0;
 }
 
@@ -128,6 +130,9 @@ a:link {
 								
 								
 								/*Punainen*/
+
+                .punainen .poisto {
+                color: #f03;}
 								
                 .punainen {
                         padding:0;
@@ -154,7 +159,7 @@ a:link {
                                         float: right;
                                         display: none;
                                         text-decoration: none;
-                                        color: #a2231e;
+                                        color: #f03;
                                 }
                                 .punainen li a:hover {
                                         text-decoration: underline;
@@ -229,12 +234,7 @@ progress[value]::-webkit-progress-value {
     border-radius: 2px; 
     background-size: 35px 20px, 100% 100%, 100% 100%;
 }
-                
-.progress-status {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-}                
+                               
                 
  .myButton {
         
@@ -514,7 +514,7 @@ a:link {
                                         float: right;
                                         display: none;
                                         text-decoration: none;
-                                        color: #a2231e;
+                                        color: #f03;
                                 }
                                 .punainen li a:hover {
                                         text-decoration: underline;
@@ -590,6 +590,7 @@ progress {
 		width: 89%;
 		  -webkit-appearance: none;
    appearance: none;
+   text-align: center;
 }
 
 progress[value]::-webkit-progress-bar {
@@ -604,11 +605,25 @@ progress[value]::-webkit-progress-value {
     background-size: 35px 20px, 100% 100%, 100% 100%;
 }
                 
-.progress-status {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
+.progress-status-wrapper {
+background: #8B2015;
+-moz-box-shadow: 0px -5px 10px #8B2015;
+-webkit-box-shadow: 0px -5px 10px #8B2015;
+box-shadow: 0px -5px 10px #8B2015;
+	padding: 0;
+    position:fixed;
+    bottom:0px;
+    width: 100%;
+    margin: 0;
+    height: 97px;
+    text-align: center;
 }                
+
+.progress-status {
+	display: block;
+	max-width: 700px;
+	margin: 0 auto;
+}
                 
  .myButton {
         
