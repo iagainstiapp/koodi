@@ -218,9 +218,9 @@ a:link {
 
 progress {
 		background: #ca958f;
-		width: 89%;
-		  -webkit-appearance: none;
-   appearance: none;
+		width: 85%;
+	    -webkit-appearance: none;
+	    appearance: none;
 }
 
 progress[value]::-webkit-progress-bar {
@@ -587,7 +587,7 @@ a:link {
 
 progress {
 		background: #ca958f;
-		width: 89%;
+		width: 85%;
 		  -webkit-appearance: none;
    appearance: none;
    text-align: center;
