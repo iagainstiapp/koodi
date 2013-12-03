@@ -301,16 +301,16 @@ $("#imdone").click(function(){
 	var countList = $("#show-items").children("li").length;
 	
 	if ( countList == laskuri ) {
-		alert ("<p>Whoohoo! You are such a king!</p>");
+		window.location.assign('/finishing_task.html');
 	}
 	else if ( laskuri / countList >= 0.66 ) {
-		alert ("<p>Try better!</p>");
+		window.location.assign('/finishing_task_orange.html');
 	}
 	else if ( laskuri / countList >= 0.33 ) {
-		alert ("<p>ihan ok!</p>");
+		window.location.assign('/finishing_task_black.html');
 	}
 	else {
-		alert ("<p> We are going into the black now!</p>");
+		window.location.assign('/finishing_task_black.html');
 	}
 });
 
