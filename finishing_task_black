@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>I against I</title>
+        <meta charset="utf-8" />
+                <!-- Alla suositeltu meta-tägi viewportille PhoneGapilla tehtäessä -->
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+    </head>
+    <body id="black">
+                <div id="wrapper">
+                        <div id="container">
+                            <h1 class="endtask_black">Seriously?</h1>
+                                <p class="below_header">You might as well do one.</p>
+							<div class="clearfix"></div>
+                        </div>
+							<div class="link1">
+						        <p><a href="index.html" id="letsdothis">Let's do this</a></p>
+							</div>
+							<div class="link2">
+                                <p><a href="index.html" id="giveup_black">I give up</a></p>
+							</div>
+                        </div>
+                </div>
+                <!-- Allaolevat tiedostot voi ottaa pois, mutta jätin ne tähän vielä varmuudenvuoksi -->
+                <!--<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>-->
+                <!--<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>-->
+                <script src="phonegap.js"></script>
+                <script src="js/jquery-1.4.4.min.js"></script>
+        <script src="js/jquery-ui-1.8.7.custom.min.js"></script>
+        <script src="js/jquery.inlineedit.js"></script>
+        <script src="js/pubsub.js"></script>
+        <script src="js/base.js"></script>
+                <script src="js/jquery.ui.touch-punch.min.js"></script>
+        
+    </body>
+</html>
