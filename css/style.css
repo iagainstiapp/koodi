@@ -1,5 +1,5 @@
 /* Fira Sans fontti */
- @import url("../font/font.css");
+ @import url('/font/font.css');
 
 <<<<<<< HEAD
 body {
@@ -363,6 +363,7 @@ progress[value]::-webkit-progress-value {
 }
 =======
 body {
+		position: relative;
         color:#fff;
         font-family: "fira_sans_otregular", "Trebuchet MS", sans-serif;
         padding:0;
@@ -376,6 +377,7 @@ a,
 a:link {
     outline: none;
 }
+
 
 ::-webkit-input-placeholder {
    color: #000;
@@ -567,18 +569,14 @@ a:link {
 }
 
 
-input[type="checkbox"] {
-    display:none;
-}
-
 
 input[type="checkbox"] + label span {
     display:inline-block;
     width:30px;
     height:30px;
     background:url(..images/checkbox.png) 50% 50% left top no-repeat;
-}
 
+}
 
 progress {
 		background: #ca958f;
