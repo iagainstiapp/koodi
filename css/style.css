@@ -1,12 +1,15 @@
+/* Fira Sans fontti */
+ @import url("../font/font.css");
+
 <<<<<<< HEAD
 body {
         color:#fff;
-        font-family:trebuchet MS, sans-serif;
+        font-family: "fira_sans_otregular", "Trebuchet MS", sans-serif;
         padding:0;
         margin:0;
         background-image:url('../images/bg.jpg');
         background-repeat:repeat-x;
-        background-color:#4ade90;
+        background-color:#3FDC89;
 }
 
 a,
@@ -34,6 +37,7 @@ a:link {
 }
 
 #wrapper{
+        font-family: "fira_sans_otregular", "Trebuchet MS", sans-serif;
 		position: relative;
         max-width: 700px;
         min-height: 700px;
@@ -50,6 +54,8 @@ a:link {
                         text-align:center;
                         font-size:46px;
                         text-transform:uppercase;
+                        font-family: "fira_sans_otbold", "fira_sans_otregular", "Trebuchet MS", sans-serif;
+                        font-weight: bold;
                 }
 
 
@@ -58,10 +64,11 @@ a:link {
                 }
 
                         #todo {
+	                        	font-family: "fira_sans_otitalic", "fira_sans_otregular", "Trebuchet MS", sans-serif;
                                 height: 26px;
                                 width: 90%;
                                 float:left;
-                                padding: 10px;
+                                padding: 12px 12px 8px 12px;
                                 margin-right: 0;
                                 font-size: 24px;
                                 background-color:#a2edc6;
@@ -136,6 +143,7 @@ a:link {
                                 text-align: left;
                         }
                                 .punainen li span {
+
                                         cursor: text;
                                         margin-left: 10px;
                                 }
@@ -356,12 +364,12 @@ progress[value]::-webkit-progress-value {
 =======
 body {
         color:#fff;
-        font-family:trebuchet MS, sans-serif;
+        font-family: "fira_sans_otregular", "Trebuchet MS", sans-serif;
         padding:0;
         margin:0;
         background-image:url('../images/bg.jpg');
         background-repeat:repeat-x;
-        background-color:#4ade90;
+        background:#4ade90;
 }
 
 a,
@@ -416,7 +424,7 @@ a:link {
                                 height: 26px;
                                 width: 90%;
                                 float:left;
-                                padding: 10px;
+                                padding: 12px 12px 8px 12px;
                                 margin-right: 0;
                                 font-size: 24px;
                                 background-color:#a2edc6;
@@ -443,7 +451,7 @@ a:link {
                         margin: 15px auto 0;
                         padding: 15px 0 15px 0;
                         width: 100%;
-						color:#000;
+						color:#fff;
 						/*background-color:#8ae1e6;*/
                         -ms-touch-action: none;
                 }
@@ -451,10 +459,11 @@ a:link {
                                 list-style-type: none;
                                 font-size: 24px;
                                 cursor: move;
-                                background-color: #dcfafa;
+
+                                
 								/*margin:15px;*/
 								margin:15px 0 15px 0;
-                                padding: 10px;
+                                padding: 9px 5px 5px 7px;
                                 text-align: left;
                         }
                                 .sininen li span {
@@ -489,7 +498,7 @@ a:link {
                                 cursor: move;
                                 border-bottom: 3px solid #eddbd9;
                                 margin:15px;
-                                padding: 10px;
+                                padding: 9px 5px 5px 7px;
                                 text-align: left;
                         }
                                 .punainen li span {
@@ -555,6 +564,19 @@ a:link {
 	font-size: 20px;
 	padding: 5px;
 	margin-left: 10px;
+}
+
+
+input[type="checkbox"] {
+    display:none;
+}
+
+
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:30px;
+    height:30px;
+    background:url(..images/checkbox.png) 50% 50% left top no-repeat;
 }
 
 
