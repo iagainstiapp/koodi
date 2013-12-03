@@ -87,7 +87,7 @@ a:link {
                         margin: 15px auto 0;
                         padding: 15px 0 15px 0;
                         width: 100%;
-						color:#000;
+						color:#fff;
 						/*background-color:#8ae1e6;*/
                         -ms-touch-action: none;
                 }
@@ -95,7 +95,7 @@ a:link {
                                 list-style-type: none;
                                 font-size: 24px;
                                 cursor: move;
-                                background-color: #dcfafa;
+                                border-bottom: 3px solid #dcfafa;
 								/*margin:15px;*/
 								margin:15px 0 15px 0;
                                 padding: 10px;
@@ -103,6 +103,7 @@ a:link {
                         }
                                 .sininen li span {
                                         cursor: text;
+                                        margin-left: 10px;
                                 }
                                 .sininen li a,
                                 .sininen li a:link {
