@@ -123,6 +123,8 @@ a:link {
                                         display: none;
                                         text-decoration: none;
                                         color: #a2231e;
+                                        position: relative;
+                                        top: 11px;
                                 }
                                 .sininen li a:hover {
                                         text-decoration: underline;
@@ -160,6 +162,8 @@ a:link {
                                         display: none;
                                         text-decoration: none;
                                         color: #f03;
+                                        position: relative;
+                                        top: 11px;
                                 }
                                 .punainen li a:hover {
                                         text-decoration: underline;
@@ -479,6 +483,8 @@ a:link {
                                         display: none;
                                         text-decoration: none;
                                         color: #a2231e;
+                                        position: relative;
+                                        top: 11px;
                                 }
                                 .sininen li a:hover {
                                         text-decoration: underline;
@@ -515,6 +521,8 @@ a:link {
                                         display: none;
                                         text-decoration: none;
                                         color: #f03;
+                                        position: relative;
+                                        top: 11px;
                                 }
                                 .punainen li a:hover {
                                         text-decoration: underline;
