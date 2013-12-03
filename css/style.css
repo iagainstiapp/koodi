@@ -120,7 +120,7 @@ a:link {
                                         float: right;
                                         display: none;
                                         text-decoration: none;
-                                        color: #f03;
+                                        color: #a2231e;
                                 }
                                 .sininen li a:hover {
                                         text-decoration: underline;
@@ -154,7 +154,7 @@ a:link {
                                         float: right;
                                         display: none;
                                         text-decoration: none;
-                                        color: #f03;
+                                        color: #a2231e;
                                 }
                                 .punainen li a:hover {
                                         text-decoration: underline;
@@ -478,7 +478,7 @@ a:link {
                                         float: right;
                                         display: none;
                                         text-decoration: none;
-                                        color: #f03;
+                                        color: #a2231e;
                                 }
                                 .sininen li a:hover {
                                         text-decoration: underline;
@@ -514,12 +514,16 @@ a:link {
                                         float: right;
                                         display: none;
                                         text-decoration: none;
-                                        color: #f03;
+                                        color: #a2231e;
                                 }
                                 .punainen li a:hover {
                                         text-decoration: underline;
                                 }
-
+                                
+                                
+.poisto {
+	font-weight: bold;
+}
                 #text{
                         text-align:center;
                 }
@@ -571,12 +575,13 @@ a:link {
 }
 
 
-
-input[type="checkbox"] + label span {
+.checkbox {
+	position: relative;
+	top: 5px;
     display:inline-block;
     width:30px;
     height:30px;
-    background:url(..images/checkbox.png) 50% 50% left top no-repeat;
+    ;
 
 }
 

@@ -21,9 +21,9 @@ $(function() {
         $itemList.append(
             "<li id='" + orderList[j] + "'>"
 			+ "<input type='checkbox' class='checkbox'>"
-            + "<span class='editable'>"
+            + "<span class='editable'><label>"
             + localStorage.getItem(orderList[j])
-            + "</span> <a class='poisto' href='#'>X</a></li>" //Poistomahdollisuuden voi ottaa myöhemmin pois
+            + "</label></span> <a class='poisto' href='#'>X</a></li>" //Poistomahdollisuuden voi ottaa myöhemmin pois
         );
     }
          
