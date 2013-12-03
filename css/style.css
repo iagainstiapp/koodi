@@ -287,6 +287,83 @@ progress[value]::-webkit-progress-value {
         text-decoration:none;
 }
 
+/* finishing_task_orange*/
+
+#done-page-orange{
+	background-color:#de9846;
+	background-image:none;
+}
+
+.endtask_orange{
+        text-transform:upppercase;	
+}
+
+#keepgoing_orange{
+	    text-transform:uppercase;
+        background-color:#e6b274;
+        padding:15px 20px 15px 20px;
+        color:#000;
+        font-size:28px;
+        text-decoration:none;
+}
+
+#done_orange{
+        text-transform:uppercase;
+        background-color:#a67234;
+        padding:15px 20px 15px 20px;
+        color:#000;
+        font-size:28px;
+        text-decoration:none;
+}
+
+.below_header{
+	font-weight:bold;
+	font-size:18px;
+	margin-top:-20px;
+}
+
+.link1{
+	padding:60px 0 30px 0;
+}
+
+		/*Musta näkymä*/
+#black {
+        background-color:#000;
+        font-family:trebuchet MS, sans-serif;
+		color: #fff;
+        padding:0;
+        margin:0;
+        background-repeat:repeat-x;
+}
+
+#letsdothis{
+        text-transform:uppercase;
+        background-color:#7f7f7f;
+        padding:15px 20px 15px 20px;
+        color:#fff;
+        font-size:28px;
+        text-decoration:none;
+}	
+
+#giveup_black{
+        text-transform:uppercase;
+        background-color:#3f3f3f;
+        padding:15px 20px 15px 20px;
+        color:#000;
+        font-size:28px;
+        text-decoration:none;
+}
+
+.link1 {
+padding: 60px 0 30px 0;}
+
+.link2 {}	
+		
+
+.endtask_black{
+        text-transform:upppercase;
+}
+
    /* progress-page*/
 
 #red{
@@ -349,5 +426,27 @@ progress[value]::-webkit-progress-value {
         #do-time{font-size:24px;}
 		#imdone{margin-left:10px; padding:15px 20px 15px 5px;}
 		
+		
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 480px) {
+        h1{font-size:36px;}
+        #text p:first-child{font-size:24px;}
+        #text p:nth-child(2){font-size:18px;}
+        #container {padding:15px;}
+        #do-when{font-size:24px;}
+        #do-time{font-size:24px;}
+		#imdone{margin-left:10px; padding:15px 20px 15px 5px;}
+		#keepgoing_orange{font-size:24px;}
+		#done_orange{font-size:24px;}
 		#text_middle {font-size: 23px;}
+}
+
+@media only screen and (max-width: 360px) {
+        h1{font-size:28px;}
+		#letsdothis  {font-size:22px;}
+		#giveup_black  {font-size:22px;}
+		.below_header {font-size:14px; margin-top:-15px;}
+
 }
