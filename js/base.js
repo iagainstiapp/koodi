@@ -146,7 +146,7 @@ $(function() {
     // Fade In and Fade Out efektiä poistolinkkin hoveriin
     $itemList.delegate('li', 'mouseover mouseout', function(event) {
         var $this = $(this).find('a');
-       if(event.type === 'mouseover') {
+        if(event.type === 'mouseover') {
             $this.stop(true, true).fadeIn();
         } else {
             $this.stop(true, true).fadeOut();
@@ -299,19 +299,21 @@ $("#imdone").click(function(){
 	//var itemList = $("#show-items");
 	var laskuri = $('input[type="checkbox"]:checked').length;
 	var countList = $("#show-items").children("li").length;
-	
+
 	if ( countList == laskuri ) {
-		window.location.assign('/finishing_task.html');
+		window.location.href="finishing_task.html";
 	}
 	else if ( laskuri / countList >= 0.66 ) {
-		window.location.assign('/finishing_task_orange.html');
+		window.location.href="finishing_task_orange.html";
 	}
 	else if ( laskuri / countList >= 0.33 ) {
-		window.location.assign('/finishing_task_black.html');
+		window.location.href="finishing_task_black.html";
 	}
 	else {
-		window.location.assign('/finishing_task_black.html');
+		window.location.href="finishing_task_black.html";
 	}
+});
+
 });
 
 	
