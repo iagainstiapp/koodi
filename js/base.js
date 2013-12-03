@@ -144,14 +144,14 @@ $(function() {
     });*/
  
     // Fade In and Fade Out efektiä poistolinkkin hoveriin
-    $itemList.delegate('li', 'mouseover mouseout', function(event) {
-        var $this = $(this).find('a');
-        if(event.type === 'mouseover') {
-            $this.stop(true, true).fadeIn();
-        } else {
-            $this.stop(true, true).fadeOut();
-        }
-    });
+    //$itemList.delegate('li', 'mouseover mouseout', function(event) {
+     //   var $this = $(this).find('a');
+      //  if(event.type === 'mouseover') {
+     //       $this.stop(true, true).fadeIn();
+      //  } else {
+      //      $this.stop(true, true).fadeOut();
+     //   }
+  //  });
          
     // Subscribes
     $.subscribe('/add/', function() {
