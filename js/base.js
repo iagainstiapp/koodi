@@ -315,6 +315,3 @@ $("#imdone").click(function(){
 });
 
 });
-
-	
-
