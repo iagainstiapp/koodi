@@ -243,7 +243,7 @@ progress[value]::-webkit-progress-value {
                 
  .myButton {
         
-        margin:30px 0 0 0;
+        margin:30px;
         position: relative;           
         display:inline-block;
         color:#a2231e;
@@ -613,6 +613,26 @@ progress[value]::-webkit-progress-value {
     border-radius: 2px; 
     background-size: 35px 20px, 100% 100%, 100% 100%;
 }
+
+.doIt {
+	display: block;
+	max-width: 700px;
+	padding-bottom:10px;
+}
+
+.doIt-wrapper {
+background: #14c3cc;
+-moz-box-shadow: 0px -5px 10px #14c3cc;
+-webkit-box-shadow: 0px -5px 10px #14c3cc;
+box-shadow: 0px -5px 10px #14c3cc;
+	padding: 0;
+    position:fixed;
+    bottom:0px;
+    width: 100%;
+    margin: 0;
+    height: 97px;
+    text-align: center;
+}     
                 
 .progress-status-wrapper {
 background: #8B2015;
