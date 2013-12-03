@@ -115,6 +115,9 @@ a:link {
                                         text-decoration: underline;
                                 }
 								
+								#doItNow {
+									display:none;
+								}
 								
 								/*Punainen*/
 								
@@ -333,7 +336,7 @@ progress[value]::-webkit-progress-value {
 		color: #fff;
         padding:0;
         margin:0;
-        background-repeat:repeat-x;
+        background-image:none;
 }
 
 #letsdothis{
