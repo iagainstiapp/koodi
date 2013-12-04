@@ -1,5 +1,5 @@
 /* Fira Sans fontti */
- @import url('/font/font.css');
+ @import url('../font/font.css');
 
 
 
@@ -461,14 +461,13 @@ a:link {
                         padding: 15px 0 15px 0;
                         width: 100%;
 						color:#fff;
-						/*background-color:#8ae1e6;*/
                         -ms-touch-action: none;
                 }
                         .sininen li {
                                 list-style-type: none;
                                 font-size: 24px;
                                 cursor: move;
-
+								background: #14c3cc;
                                 
 								/*margin:15px;*/
 								margin:15px 0 15px 0;
@@ -504,6 +503,7 @@ a:link {
                         -ms-touch-action: none;
                 }
                         .punainen li {
+		                        background: #8B2015;
                                 list-style-type: none;
                                 font-size: 24px;
                                 cursor: move;
@@ -633,6 +633,7 @@ box-shadow: 0px -5px 10px #14c3cc;
     margin: 0;
     height: 97px;
     text-align: center;
+    overflow: hidden;
 }     
                 
 .progress-status-wrapper {
@@ -647,6 +648,7 @@ box-shadow: 0px -5px 10px #8B2015;
     margin: 0;
     height: 97px;
     text-align: center;
+    overflow: hidden;
 }                
 
 .progress-status {
@@ -862,6 +864,13 @@ padding: 60px 0 30px 0;}
 }
 
 /*Media Queries*/
+
+@media only screen and (max-height: 320px) {
+.doIt-wrapper {position: relative}
+.progress-status-wrapper {position: relative}
+
+}
+
 @media only screen and (max-width: 480px) {
         h1{font-size:36px;}
         #text p:first-child{font-size:24px;}
