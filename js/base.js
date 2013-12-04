@@ -317,12 +317,10 @@ $("#imdone").click(function(){
 	if ( countList == laskuri ) {
 		window.location.href="finishing_task.html";
 	}
-	else if ( laskuri / countList >= 0.66 ) {
+	else if ( laskuri / countList >= 0.45 ) {
 		window.location.href="finishing_task_orange.html";
 	}
-	else if ( laskuri / countList >= 0.33 ) {
-		window.location.href="finishing_task_black.html";
-	}
+	
 	else {
 		window.location.href="finishing_task_black.html";
 	}
