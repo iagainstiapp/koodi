@@ -112,7 +112,8 @@ $(function() {
 		var laskuri = $('input[type="checkbox"]:checked').length;
 		var countList = $("#show-items").children("li").length - 1;
 		var val = laskuri / countList;
-		document.getElementById("progressbar").value = val;
+		//document.getElementById("progressbar").value = val;
+		$('#progressbar').val(val);
     });
      
     // Lajittelee (sort) yksittäisiä todo-tehtäviä
@@ -295,7 +296,8 @@ $("#letsDo").click(function(){
 	var laskuri = $('input[type="checkbox"]:checked').length;
 	var countList = $("#show-items").children("li").length;
 	var val = laskuri / countList;
-	document.getElementById("progressbar").value = val;
+	//document.getElementById("progressbar").value = val;
+	$('#progressbar').val(val);
 	});
 	
 	//$(".poisto").ready(function(){
