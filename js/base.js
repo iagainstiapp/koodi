@@ -23,7 +23,7 @@ $(function() {
 			+ "<input type='checkbox' class='checkbox'>"
             + "<span class='editable'><label>"
             + localStorage.getItem(orderList[j])
-            + "</label></span> <a class='poisto' href='#'>X</a></li>" //Poistomahdollisuuden voi ottaa myöhemmin pois
+            + "</label></span> <a class='poisto' style='display:inline;' href='#'>X</a></li>" //Poistomahdollisuuden voi ottaa myöhemmin pois
         );
     }
          
@@ -151,9 +151,9 @@ $(function() {
     $itemList.delegate('li', 'mouseover mouseout', function(event) {
         var $this = $(this).find('a');
         if(event.type === 'mouseover') {
-            $this.stop(true, true).fadeIn();
+            $this.stop(true, true).show();
         } else {
-            $this.stop(true, true).fadeOut();
+            $this.stop(true, true).show();
         }
     });
          
@@ -173,7 +173,7 @@ $(function() {
                 "<li id='todo-" + i + "'>"
                 + "<span class='editable'>"
                 + localStorage.getItem("todo-" + i)
-                + " </span><a href='#'>x</a></li>"
+                + " </span><a style='display:inline;' href='#'>x</a></li>"
             );
  
             $.publish('/regenerate-list/', []);
