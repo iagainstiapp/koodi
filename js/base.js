@@ -48,6 +48,7 @@ $(function() {
 	$('#do-when').css('display',localStorage.showDo);
 	$('#do-time').css('display',localStorage.showTime);
 	$('#doItNow').css('display',localStorage.showDo);
+	$('.doIt-wrapper').css('display',localStorage.showWrapper);
 	
 
    $('#todo').focus(function(){
@@ -77,6 +78,9 @@ $(function() {
 	 
 	 localStorage.showTime = "block";
      $('#do-time').css('display',localStorage.showTime);
+	 
+	 localStorage.showWrapper = "block";
+	 $('.doIt-wrapper').css('display', localStorage.showWrapper);
 	 
    });
    $('#submit').click(function() {

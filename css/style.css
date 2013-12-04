@@ -622,6 +622,7 @@ progress[value]::-webkit-progress-value {
 
 .doIt-wrapper {
 background: #14c3cc;
+display:none;
 -moz-box-shadow: 0px -5px 10px #14c3cc;
 -webkit-box-shadow: 0px -5px 10px #14c3cc;
 box-shadow: 0px -5px 10px #14c3cc;
@@ -809,6 +810,7 @@ padding: 60px 0 30px 0;}
         text-align:left;
 		float:left;
 		margin-left:30px;
+		cursor:pointer;
 }
 
                 h2 {
