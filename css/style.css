@@ -191,9 +191,9 @@ h1 {
 }
 progress { margin-bottom: 15px; background: #ca958f; width: 85%; -webkit-appearance: none; appearance: none; text-align: center; }
 
-.progressmax { width:100%; height:13px; background:#ca958f;}
+.progressmax { width:85%; height:9px; background:#8B2015; border:solid 2px #000000; margin:auto}
 
-.progressvalue { width:0%; height:13px; background:#FFF;}
+.progressvalue { width:0%; height:9px; background:#D5B1AC;}
 
 
 .doIt { display: block; max-width: 700px; padding-bottom: 10px; }
