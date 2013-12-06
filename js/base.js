@@ -111,10 +111,11 @@ $(function() {
         $.publish('/remove/', [$this]);
 		var laskuri = $('input[type="checkbox"]:checked').length;
 		var countList = $("#show-items").children("li").length - 1;
-		var val = laskuri / countList * 100;
+		var val = laskuri / countList * 100 +'%';
 		//document.getElementById("progressbar").value = val;
 		//$('#progressbar').val(val);
-		$('.progressvalue').width(val)
+		//$('.progressvalue').width(val)
+		$('.progressvalue').css('width', val);
     });
      
     // Lajittelee (sort) yksittäisiä todo-tehtäviä
@@ -296,10 +297,10 @@ $("#letsDo").click(function(){
 	$(".checkbox").click(function(){
 	var laskuri = $('input[type="checkbox"]:checked').length;
 	var countList = $("#show-items").children("li").length;
-	var val = laskuri / countList * 100;
-	//document.getElementById("progressbar").value = val;
+	var val = laskuri / countList * 100 + '%';
+	//document.getElementByClass("progressvalue").style.width = val;
 	//$('#progressbar').val(val);
-	$('.progressvalue').width(val)
+	$('.progressvalue').css('width', val);
 	});
 	
 	//$(".poisto").ready(function(){
