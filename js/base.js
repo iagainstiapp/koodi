@@ -23,7 +23,8 @@ $(function() {
 			+ "<div class='checkbox_wrapper'><input type='checkbox' class='checkbox'><label></label></div>"
             + "<span class='editable'><label>"
             + localStorage.getItem(orderList[j])
-           // + "</label></span> <a class='poisto' style='display:inline;' href='#'>X</a></li>" //Poistomahdollisuuden voi ottaa myöhemmin pois
+            + "</label></span>" 
+			//+ "<a class='poisto' style='display:inline;' href='#'>X</a></li>" //Poistomahdollisuuden voi ottaa myöhemmin pois
         );
     }
          
