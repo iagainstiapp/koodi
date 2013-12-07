@@ -20,7 +20,7 @@ $(function() {
     for( j = 0, k = orderList.length; j < k; j++) {
         $itemList.append(
             "<li id='" + orderList[j] + "'>"
-			+ "<input type='checkbox' class='checkbox'>"
+			+ "<div class='checkbox_wrapper'><input type='checkbox' class='checkbox'><label></label></div>"
             + "<span class='editable'><label>"
             + localStorage.getItem(orderList[j])
             + "</label></span> <a class='poisto' style='display:inline;' href='#'>X</a></li>" //Poistomahdollisuuden voi ottaa myöhemmin pois
@@ -180,7 +180,7 @@ $(function() {
                 "<li id='todo-" + i + "'>"
                 + "<span class='editable'>"
                 + localStorage.getItem("todo-" + i)
-                + " </span><a style='display:inline;' href='#'>x</a></li>"
+                + " </span><a style='display:inline;' href='#'>X</a></li>"
             );
  
             $.publish('/regenerate-list/', []);
