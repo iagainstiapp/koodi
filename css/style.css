@@ -81,6 +81,7 @@ h1 {
 }
 .sininen {
 	margin: 15px auto 0;
+	margin-left:-10px;
 	padding: 10px;
 	width: 100%;
 	color: #fff;
@@ -110,7 +111,7 @@ h1 {
 	top: 11px;
 }
 .sininen li a:hover {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 
 .punainen .poisto {
@@ -145,7 +146,7 @@ h1 {
 	top: 11px;
 }
 .punainen li a:hover {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 #text {
 	text-align: center;
@@ -175,6 +176,7 @@ h1 {
 }
 #show-items {
 	clear: both;
+	margin-bottom:70px;
 }
 .js .display {
 	display: none;
@@ -194,7 +196,6 @@ progress { margin-bottom: 15px; background: #ca958f; width: 85%; -webkit-appeara
 .progressmax { width:85%; height:9px; background:#8B2015; border:solid 2px #000000; margin:auto}
 
 .progressvalue { width:0%; height:9px; background:#D5B1AC;}
-
 
 .doIt { display: block; max-width: 700px; padding-bottom: 10px; }
 
@@ -245,7 +246,47 @@ progress[value]::-webkit-progress-value {
 	font-weight: bold;
 }
 
-.checkbox { position: relative; top: 5px; display: inline-block; width: 30px; height: 30px; }
+/*Checkboxien muotoilu*/
+
+.checkbox_wrapper{
+    position: relative;
+    height: 30px;
+    width: 30px;
+	float:left;
+	z-index:600;
+}
+
+input[type="checkbox"] {
+    opacity:0;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+input[type="checkbox"] + label{
+    background:url('../images/checkbox2.png') no-repeat;
+    height: 30px;
+    width: 30px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+input[type="checkbox"]:checked + label{
+    background:url('../images/checkedbox2.png') no-repeat;
+    height: 30px;
+    width: 30px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+}
+
+/*.checkbox { position: relative; top: 5px; display: inline-block; width: 30px; height: 30px; }*/
 
 .doIt-wrapper {
 	background: #14c3cc;
@@ -276,6 +317,7 @@ progress[value]::-webkit-progress-value {
 	height: 97px;
 	text-align: center;
 	overflow: hidden;
+	z-index:999;
 }
 
 .progress-status { display: block; max-width: 700px; margin: 0 auto; }
@@ -292,7 +334,7 @@ progress[value]::-webkit-progress-value {
 
 .link1 { padding: 60px 0 30px 0; }
 
-#black { background-color: #000; font-family: trebuchet MS, sans-serif; color: #fff; padding: 0; margin: 0; background-image: none; }
+#black { background-color: #000; color: #fff; padding: 0; margin: 0; background-image: none; }
 
 #letsdothis { text-transform: uppercase; background-color: #7f7f7f; padding: 15px 20px 15px 20px; color: #fff; font-size: 22px; text-decoration: none; }
 
@@ -373,11 +415,12 @@ h2 {
 }
 
 
+
 @media only screen and (max-width: 480px) {
 
 	h1 {
-		font-size: 36px;
-		margin-bottom: 60px;
+		font-size: 54px;
+		margin-bottom: 40px;
 	}
 	#text p:first-child {
 		font-size: 24px;
@@ -386,7 +429,7 @@ h2 {
 		font-size: 18px;
 	}
 	#container {
-		padding: 15px;
+		padding: 25px;
 	}
 	#do-when {
 		font-size: 24px;
@@ -403,8 +446,9 @@ h2 {
 	}
 }
 
-@media only screen and (max-height: 320px) { .doIt-wrapper { position: relative; }
 
-@media only screen and (max-width: 360px) { h1 { font-size: 28px; }
+@media only screen and (max-width: 360px) { h1 { font-size: 40px; 	margin-bottom: 25px;}}
+
+/*@media only screen and (max-height: 320px) { .doIt-wrapper { position: relative; }*/
 
 
