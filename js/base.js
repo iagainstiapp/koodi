@@ -23,7 +23,7 @@ $(function() {
 			+ "<div class='checkbox_wrapper'><input type='checkbox' class='checkbox'><label></label></div>"
             + "<span class='editable'><label>"
             + localStorage.getItem(orderList[j])
-            + "</label></span> <a class='poisto' style='display:inline;' href='#'>X</a></li>" //Poistomahdollisuuden voi ottaa myöhemmin pois
+           // + "</label></span> <a class='poisto' style='display:inline;' href='#'>X</a></li>" //Poistomahdollisuuden voi ottaa myöhemmin pois
         );
     }
          
@@ -109,13 +109,13 @@ $(function() {
         var $this = $(this);
         e.preventDefault();
         $.publish('/remove/', [$this]);
-		var laskuri = $('input[type="checkbox"]:checked').length;
-		var countList = $("#show-items").children("li").length - 1;
-		var val = laskuri / countList * 100 +'%';
+		//var laskuri = $('input[type="checkbox"]:checked').length;
+		//var countList = $("#show-items").children("li").length - 1;
+		//var val = laskuri / countList * 100 +'%';
 		//document.getElementById("progressbar").value = val;
 		//$('#progressbar').val(val);
 		//$('.progressvalue').width(val)
-		$('.progressvalue').css('width', val);
+		//$('.progressvalue').css('width', val);
     });
      
     // Lajittelee (sort) yksittäisiä todo-tehtäviä
