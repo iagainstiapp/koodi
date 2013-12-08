@@ -290,6 +290,7 @@ input[type="checkbox"]:checked + label{
 /*.checkbox { position: relative; top: 5px; display: inline-block; width: 30px; height: 30px; }*/
 
 .doIt-wrapper {
+	background: #14c3cc;
 	display: none;
 	-moz-box-shadow: 0px -5px 10px #14c3cc;
 	-webkit-box-shadow: 0px -5px 10px #14c3cc;
